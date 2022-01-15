@@ -1,0 +1,242 @@
+/* font s */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* common things started */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfcfc;
+}
+
+/* common things END */ 
+
+nav{
+    margin-top:87px;
+    margin-bottom: 20p;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+.header-icons a{
+    text-decoration: none;
+    margin-left:34px;
+    font-size: 16px;
+    color: #3A3A3A;
+    
+}
+/* header end  */
+.container-1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.sec-1-header-text{
+    font-weight: bold;
+    font-size: 52px;
+    color: #3A3A3A;
+}
+.sec-1-header-Para{
+    width: 505px;
+    height: 60.9px;
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 16px;
+}
+.sec-1-left a , .more-btn{  
+text-decoration: none;  
+font-weight: 700;
+color: #ffffff; 
+background-color: #E02C6D;
+padding: 10px 24px; 
+border-radius: 41px;
+display: inline-block;
+margin-top: 16.1px;
+}
+.sec-1-left a i , .right-arrow{
+    margin-left: 10px;
+}
+.sec-1-left{
+    width: 40%;
+}
+.sec-1-right{
+    width: 28%;
+}
+.sec-1-right img{
+    width: 100%;
+}
+
+/* sec-1 end  */
+.container-2 {
+    margin-bottom: 100px;
+}
+.container-2 h1{
+    text-align: center;
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 50px;
+
+}
+.sec-2-products-details-wrap{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 30px;
+    width: 80%;
+    margin: auto;
+}
+.sec-2-products-details{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 15px;
+}
+.sec-2-products-details img{
+    width: 100%;
+}
+.sec-2-products-details .product-name{
+    display: block;
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 13px;
+}
+.sec-2-products-details .product-price{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.product-rating-box{
+    
+margin-top: 5px;
+}
+.product-rating i{
+    letter-spacing: 2px;
+}
+.product-rating{
+    color: #FB8200;
+    display: inline-block;
+}
+.product-rating-number{   
+font-size: 14px;
+letter-spacing: 0.1px;
+color: #5E6366;
+}
+.extra-facilitie{
+    font-size: 14px;
+    color: #787885;
+    font-weight: bold;
+    margin-top: 2.5px;
+}
+#see-more-products-btn{
+    grid-column: 1 / 4;
+    text-align: right;
+    margin-top: 20px;
+}
+#see-more-products-btn a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #E02C6D;
+}
+
+/****************** 
+           sec-2 end  
+                  *****************/
+.container-3 {
+    margin-bottom: 80px;
+}
+
+.sec-3-gimbal{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 0px 134px;
+}
+.gimbal-image {
+    width: 55%;
+    display: grid;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.gimbal-image img{
+    border-radius: 5px;
+}
+
+.sec-3-gimbal h1{
+    color: #0A0826;
+    font-weight: bold;
+    font-size: 38px;
+    margin-top: 5px;
+}
+.sec-3-gimbal p{
+    color: #6C6C6C;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.gimbal-detail {
+    width: 50%;
+}
+
+/* sec-3 end  */
+
+footer{
+    padding: 25px 0 35px 0;
+    background-color: #0A0826;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+footer , h1 span p .div i{
+    color: white;
+}
+footer  h1{
+    
+font-weight: bold;
+    
+font-size: 24px;
+    
+margin-bottom: 5px;
+}
+footer ,p{
+    color: #D9DBE1;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: -0.5px;
+    margin-top: 5px;
+}
+.footer-icons a{
+    color: white;
+    font-size: 40px;
+    margin: 6px;
+}
+
+
+/* ****************
+              norlam css end 
+                ***************** */
+
+
+
+                /*
+                 media queries 
+                */
+
+
+            /* Mobile devices */
+
+@media only screen and (max-width:688px) {
+        .sec-2-products-details-wrap{
+            grid-template-columns: repeat(1,1fr);
+
+        }
+}
