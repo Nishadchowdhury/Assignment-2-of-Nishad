@@ -12,23 +12,35 @@ body{
 /* common things END */ 
 
 nav{
-    margin-top:87px;
-    margin-bottom: 20p;
+    margin-bottom: 30px;
     padding: 0 5%;
     display: flex;
     justify-content: space-between;
+}
+.for-high{
+    margin-top:50px;
+}
+.for-mobile{
+    display: none;
 }
 .header-title{
     font-size: 24px;
     font-weight: 700;
     color: #3A3A3A;
 }
+
 .header-icons a{
     text-decoration: none;
     margin-left:34px;
     font-size: 16px;
+    display: inline-block;
     color: #3A3A3A;
+    transition: .2s;
     
+}
+.header-icons a:hover {
+    
+    transform: scale(1.2);
 }
 /* header end  */
 .container-1{
@@ -48,6 +60,7 @@ nav{
     font-weight: 600;
     font-size: 16px;
 }
+
 .sec-1-left a , .more-btn{  
 text-decoration: none;  
 font-weight: 700;
@@ -56,7 +69,12 @@ background-color: #E02C6D;
 padding: 10px 24px; 
 border-radius: 41px;
 display: inline-block;
-margin-top: 16.1px;
+margin-top: 40.1px;
+    transition: .3s;
+}
+.sec-1-left a:hover                                     {
+    background-color: #e02c6e98;
+    transition: .3s;
 }
 .sec-1-left a i , .right-arrow{
     margin-left: 10px;
@@ -64,9 +82,17 @@ margin-top: 16.1px;
 
 .sec-1-right{
     width: 28%;
+    background-image: url(./ifile/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .sec-1-right img{
     width: 100%;
+    transition: .3s;
+}
+.sec-1-right:hover img{
+    opacity: .7;
+    transition: .3s;
 }
 
 /* sec-1 end  */
@@ -93,9 +119,14 @@ margin-top: 16.1px;
     display: inline-block;
     border-radius: 5px;
     padding: 15px;
+    overflow: hidden;
 }
 .sec-2-products-details img{
     width: 100%;
+    transition: .3s;
+}.sec-2-products-details:hover img{
+    transform: scale(1.03);
+    transition: .3s;
 }
 .sec-2-products-details .product-name{
     display: block;
@@ -180,8 +211,12 @@ color: #5E6366;
 }
 
 
+ 
 .gimbal-detail {
     width: 50%;
+}
+.more-btn-1:hover{
+    background-color: #e02c6e80;
 }
 
 /* sec-3 end  */
@@ -219,10 +254,15 @@ footer ,p{
 }
 
 
+
+
 /* ****************
               norlam css end 
                 ***************** */
 
+/* ---------------------------------------
+                hover part 
+----------------------------------------- */
 
 
                 /*
@@ -230,13 +270,15 @@ footer ,p{
                 */
 
 
-
-
             /* Mobile devices */
 
 @media only screen and (max-width: 688px) {
-    header{
+    .for-high{
         display: none;
+    }
+    .for-mobile{
+        display: inline-block;
+        margin-top: 40px;
     }
         .sec-2-products-details-wrap{
             grid-template-columns: repeat(1,1fr);
