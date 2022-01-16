@@ -61,9 +61,7 @@ margin-top: 16.1px;
 .sec-1-left a i , .right-arrow{
     margin-left: 10px;
 }
-.sec-1-left{
-    width: 40%;
-}
+
 .sec-1-right{
     width: 28%;
 }
@@ -132,12 +130,14 @@ color: #5E6366;
     font-weight: bold;
     margin-top: 2.5px;
 }
-#see-more-products-btn{
-    grid-column: 1 / 4;
-    text-align: right;
-    margin-top: 20px;
+.see-more-products-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 60px;
+    width: 90%;
 }
-#see-more-products-btn a{
+.see-more-products-btn a{
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -153,9 +153,7 @@ color: #5E6366;
 
 .sec-3-gimbal{
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
-    padding: 0px 134px;
 }
 .gimbal-image {
     width: 55%;
@@ -232,11 +230,84 @@ footer ,p{
                 */
 
 
+
+
             /* Mobile devices */
 
-@media only screen and (max-width:688px) {
+@media only screen and (max-width: 688px) {
+    header{
+        display: none;
+    }
         .sec-2-products-details-wrap{
             grid-template-columns: repeat(1,1fr);
-
         }
+     .sec-3-gimbal{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+     padding: 0px;
+ }
+ .gimbal-detail{
+    width: 75%;
+    padding: 20px;
+    margin: auto;
+ }
+ .container-1{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ .sec-1-left{
+ flex-direction: column;
+ align-items: center;
+ width: 80%;
+ order: 2;
+ }
+ .sec-1-left p
+ {
+     width: 111%;        
+ }
+ .sec-1-left a
+ {margin: auto;
+ display: block;
+ margin-top: 10%;
+         
+ }
+ .sec-1-right{
+ order: 1;
+ width: 100%;
+   }
+ .sec-1-right img{
+ width: 100%;
+
+}
+
+}
+            
+             /* tablate devices */
+
+ @media only screen and (min-width:688px) and (max-width:992px) {
+
+     
+    .sec-2-products-details-wrap{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sec-3-gimbal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .more-btn{
+        display: inline-block;
+        margin: auto;
+        margin-left: 30%;
+        margin-top: 3%;
+    }
+   
+
+
 }
